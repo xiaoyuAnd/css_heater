@@ -3,10 +3,16 @@
     margin: 200px;
     position: relative;
     transition: all .3s;
+    animation: heart 1s infinite alternate;
 }
 
-.heater:hover {
-    transform: scale(1.5);
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 .heater>div {
@@ -21,7 +27,7 @@
     height: 100px;
     border: 1px solid red;
     background-color: red;
-    transform: rotate(45deg) translateX(60px);
+    transform: rotate(45deg) translateX(70px);
     border-radius: 50% 0 0 50%;
 }
 
@@ -33,7 +39,7 @@
     height: 100px;
     border: 1px solid red;
     background-color: red;
-    transform: rotate(45deg) translateY(60px);
+    transform: rotate(45deg) translateY(70px);
     border-radius: 50% 50% 0 0;
 }
 
